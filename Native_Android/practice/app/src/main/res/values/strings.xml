@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">practice</string>
+    <string name="true_btn">true</string>
+    <string name="false_btn">false</string>
+    <string name="textview">this TextView contains the question.....</string>
+    <string name="prev_btn">prev</string>
+    <string name="next_btn">Next</string>
+    <string name="discription_img">At here IMAGE  is present.</string>
+</resources>

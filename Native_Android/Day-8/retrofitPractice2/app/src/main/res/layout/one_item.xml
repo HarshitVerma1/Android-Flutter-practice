@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#758283"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        app:cardCornerRadius="10dp"
+        android:elevation="10dp"
+        app:cardElevation="10dp"
+        app:cardUseCompatPadding="true"
+        android:outlineAmbientShadowColor="@color/light_black">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:id="@+id/img1"
+                android:src="@color/light_black"
+                android:layout_margin="10dp"/>
+
+            <TextView
+                android:id="@+id/txt1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@+id/img1"
+                android:padding="5dp"
+                android:text="Name"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txt2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txt1"
+                android:layout_alignStart="@+id/txt1"
+                android:layout_marginStart="-2dp"
+                android:layout_marginLeft="19dp"
+                android:layout_marginTop="2dp"
+                android:layout_toRightOf="@+id/img1"
+                android:padding="5dp"
+                android:text="UserId"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/txt3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txt2"
+                android:layout_alignStart="@+id/txt1"
+                android:layout_marginStart="-1dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="-2dp"
+                android:layout_toRightOf="@+id/img1"
+                android:padding="5dp"
+                android:text="email"
+                android:textSize="16dp" />
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

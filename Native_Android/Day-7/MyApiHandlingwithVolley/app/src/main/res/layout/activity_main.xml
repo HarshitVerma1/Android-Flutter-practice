@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#2827CC"
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="585dp"
+        android:layout_marginTop="80dp"
+        android:background="#120E43">
+
+        <TextView
+            android:id="@+id/textview1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="26dp"
+            android:hint="Enter Date and Click Button for fetch data.... "
+            android:textColor="@color/white"
+            android:textColorHighlight="#000000"
+            android:textColorHint="@color/white"
+            android:textSize="20dp"/>
+    </ScrollView>
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:text="Fetch Data"
+        android:layout_marginLeft="140dp"
+        android:layout_marginBottom="15dp"
+        android:onClick="Fetched"
+        tools:ignore="OnClick" />
+
+    <EditText
+        android:id="@+id/editTextDate1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Date Formate dd-mm-yyyy"
+        android:textSize="29dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="17dp"
+        android:ems="10"
+        android:inputType="date" />
+
+
+</FrameLayout>
+
