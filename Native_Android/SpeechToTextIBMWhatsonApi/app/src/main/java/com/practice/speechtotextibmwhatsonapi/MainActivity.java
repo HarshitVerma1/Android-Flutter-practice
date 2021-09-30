@@ -43,8 +43,8 @@ public class MainActivity extends AppCompatActivity {
     private static final String[] permissions = {Manifest.permission.RECORD_AUDIO};
     private boolean audioRecordingPermissionGranted;
 
-    private static final String API_KEY = "HCVfiavcheXjRvMmyVu048NOlyqcSMq-X7tDhaAYpoJK";
-    private static final String URL = "https://api.jp-tok.speech-to-text.watson.cloud.ibm.com/instances/ef067037-68e6-401a-919c-37f2e69b6013";
+    private static final String API_KEY = "0KQ5LYliq73FErT_aWkZNrfPbYiX6MFnhZueLGGhqXm1";
+    private static final String URL = "https://api.us-south.speech-to-text.watson.cloud.ibm.com/instances/b3c76f29-5ac8-4f94-be6e-44df818d9c2c";
 
     private Button startRecordingButton;
 
