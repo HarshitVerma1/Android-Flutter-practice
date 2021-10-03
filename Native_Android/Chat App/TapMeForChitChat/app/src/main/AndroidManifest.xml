@@ -12,6 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.TapMeForChitChat">
         <activity
+            android:name=".MainChatActivity"
+            android:exported="true" />
+        <activity
             android:name=".RegisterActivity"
             android:exported="true" />
         <activity
