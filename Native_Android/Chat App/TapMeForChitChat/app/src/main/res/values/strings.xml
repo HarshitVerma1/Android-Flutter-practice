@@ -1,4 +1,8 @@
 <resources>
     <string name="app_name">TapMe For ChitChat</string>
     <string name="hint_Email">EMAIL</string>
+    <string name="invalid_Email">Your email is invalid.</string>
+    <string name="invalid_password">Your password is too short.</string>
+    <string name="incorrect_password">Your password is not correct.</string>
+    <string name="field_required">Please fill the required field.</string>
 </resources>
