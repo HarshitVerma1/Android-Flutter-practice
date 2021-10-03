@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "551873295614",
+    "project_id": "tapmeforchitchat",
+    "storage_bucket": "tapmeforchitchat.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:551873295614:android:063ee8f88d3b775634a1af",
+        "android_client_info": {
+          "package_name": "com.practice.tapmeforchitchat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "551873295614-ggj2f1tfkvu4ch57dboqdtge2gmrota7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCxfl0PFiXAjyzZc4ZQ-_rO3mvgL5-YKpA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "551873295614-ggj2f1tfkvu4ch57dboqdtge2gmrota7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
