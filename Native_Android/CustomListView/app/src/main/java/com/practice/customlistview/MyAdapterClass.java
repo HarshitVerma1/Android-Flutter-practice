@@ -1,15 +1,12 @@
 package com.practice.customlistview;
 
 import android.app.Activity;
-import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
-
-import androidx.annotation.NonNull;
 
 public class MyAdapterClass extends ArrayAdapter<String> {
     private final Activity context;
@@ -18,9 +15,9 @@ public class MyAdapterClass extends ArrayAdapter<String> {
     private final String[] phoneNumber;
 
     //Alt+Shift+insert ------> create only default Constructor
-    public MyAdapterClass(@NonNull Context context, int resource, Activity context1, int[] image, String[] username, String[] phoneNumber) {
-        super(context, resource);
-        this.context = context1;
+    public MyAdapterClass(Activity context, int[] image, String[] username, String[] phoneNumber) {
+        super(context, R.layout.one_item_layout,username);
+        this.context = context;
         this.image = image;
         Username = username;
         this.phoneNumber = phoneNumber;
@@ -32,7 +29,6 @@ public class MyAdapterClass extends ArrayAdapter<String> {
     {
         LayoutInflater inflater=context.getLayoutInflater();
         View rowView=inflater.inflate(R.layout.one_item_layout,null,true);
-
         TextView UserNum=rowView.findViewById(R.id.textView1);
         TextView MobileNum=rowView.findViewById(R.id.textView2);
         ImageView imgView=rowView.findViewById(R.id.imageView);
