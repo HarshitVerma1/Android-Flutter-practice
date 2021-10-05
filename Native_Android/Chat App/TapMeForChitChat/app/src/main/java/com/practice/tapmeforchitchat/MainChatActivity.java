@@ -32,6 +32,19 @@ public class MainChatActivity extends AppCompatActivity {
         myChatText=findViewById(R.id.messageInput);
         mySendChatButton=findViewById(R.id.sendButton);
     }
+
+    //Push chat to FireBase
+    private void pushChatToFireBase(){
+        String chatInput=myChatText.getText().toString();
+        if(!chatInput.equals(""))
+        {
+            InstantMessage chat =new InstantMessage(chatInput,myUserName);
+            myDatabaseRef.child("chats").push().setValue(chat);
+            myChatText.setText("");
+        }
+    }
+
+
     // Set UserName for user
     private void setUpDisplayName()
     {

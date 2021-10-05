@@ -57,10 +57,10 @@ public class ChatListAdapter extends BaseAdapter {
     };
 
     //Constructor is important here
-    public ChatListAdapter(Activity activity,DatabaseReference databaseReference , String name)
+    public ChatListAdapter(Activity activity,DatabaseReference ref , String name)
     {
         myActivity=activity;
-        myDatabaseRef=databaseReference;
+        myDatabaseRef=ref.child("chats");
         myUserName=name;
         mySnapshot=new ArrayList<>();
 
