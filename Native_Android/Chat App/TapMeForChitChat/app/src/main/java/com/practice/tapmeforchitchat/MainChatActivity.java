@@ -77,5 +77,16 @@ public class MainChatActivity extends AppCompatActivity {
         }
     }
 
+    @Override
+    protected void onStart() {
+        super.onStart();
+        myAdapter=new ChatListAdapter(this,myDatabaseRef,myUserName);
+        myChatListView.setAdapter(myAdapter);
+    }
 
+    @Override
+    protected void onStop() {
+        super.onStop();
+        myAdapter.freeUpResources();    
+    }
 }
