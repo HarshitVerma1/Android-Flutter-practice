@@ -4,9 +4,12 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.view.KeyEvent;
+import android.view.View;
 import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.ListView;
+import android.widget.TextView;
 
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
@@ -31,6 +34,24 @@ public class MainChatActivity extends AppCompatActivity {
         myChatListView=findViewById(R.id.chat_list_view);
         myChatText=findViewById(R.id.messageInput);
         mySendChatButton=findViewById(R.id.sendButton);
+
+        // Push CHat to FireBase on button top
+        mySendChatButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                pushChatToFireBase();
+            }
+        });
+
+        //call push method on keyboard event
+        myChatText.setOnEditorActionListener(new TextView.OnEditorActionListener() {
+            @Override
+            public boolean onEditorAction(TextView textView, int i, KeyEvent keyEvent) {
+                pushChatToFireBase();
+                return true;
+            }
+        });
+
     }
 
     //Push chat to FireBase
