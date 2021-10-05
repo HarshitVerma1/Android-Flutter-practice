@@ -16,12 +16,12 @@ import com.google.firebase.database.FirebaseDatabase;
 
 public class MainChatActivity extends AppCompatActivity {
 
-    private String myUserName;
-    private ListView myChatListView;
-    private EditText myChatText;
-    private ImageButton mySendChatButton;
-    private DatabaseReference myDatabaseRef;
-    private ChatListAdapter myAdapter;
+    public String myUserName;
+    public ListView myChatListView;
+    public EditText myChatText;
+    public ImageButton mySendChatButton;
+    public static DatabaseReference myDatabaseRef;
+    public ChatListAdapter myAdapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
