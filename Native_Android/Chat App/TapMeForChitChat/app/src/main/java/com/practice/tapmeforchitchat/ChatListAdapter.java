@@ -114,7 +114,7 @@ public class ChatListAdapter extends BaseAdapter {
         //  Styling
         boolean isMe=message.getAuthor().equals(myUserName);
         //call a function for Styling
-        chatRowStling(isMe,holder);
+        chatRowStyling(isMe,holder);
         String author = message.getAuthor();
         holder.senderName.setText(author);
         String msg= message.getMessage();
@@ -122,7 +122,7 @@ public class ChatListAdapter extends BaseAdapter {
 
         return view;
     }
-    private void chatRowStling(boolean isItMe,ViewHolder holder)
+    private void chatRowStyling(boolean isItMe,ViewHolder holder)
     {
         if (isItMe) {
             holder.layoutParams.gravity=Gravity.END;
@@ -136,6 +136,9 @@ public class ChatListAdapter extends BaseAdapter {
             holder.chatBody.setBackgroundResource(R.drawable.speech_bubble_orange);
 
         }
+        //Forgot this setUp  So App crashed
+        holder.senderName.setLayoutParams(holder.layoutParams);
+        holder.chatBody.setLayoutParams(holder.layoutParams);
     }
     //improve performance for memory stuff (Solve Scrolling issues)
     public void freeUpResources(){

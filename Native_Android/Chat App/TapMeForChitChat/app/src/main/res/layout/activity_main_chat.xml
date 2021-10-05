@@ -5,7 +5,7 @@
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     android:padding="10dp"
-    android:background="#9b59b6"
+    android:background="#ecf0f1"
     tools:context=".MainChatActivity">
 
     <ListView
@@ -13,7 +13,9 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:dividerHeight="0dp"
-        android:transcriptMode="alwaysScroll">
+        android:transcriptMode="alwaysScroll"
+        android:layout_alignParentTop="true"
+        android:layout_above="@id/listFooter">
 
     </ListView>
 
