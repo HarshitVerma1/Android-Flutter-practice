@@ -2,6 +2,7 @@ package com.practice.tapmeforchitchat;
 
 import android.app.Activity;
 import android.content.Context;
+import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -117,6 +118,12 @@ public class ChatListAdapter extends BaseAdapter {
         String msg= message.getMessage();
         holder.chatBody.setText(msg);
 
-        return null;
+        return view;
+    }
+    private void chatRowStling(boolean isItMe,ViewHolder holder1)
+    {
+        if (isItMe) {
+
+        }
     }
 }
