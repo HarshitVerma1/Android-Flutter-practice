@@ -2,6 +2,7 @@ package com.practice.tapmeforchitchat;
 
 import android.app.Activity;
 import android.content.Context;
+import android.graphics.Color;
 import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -74,7 +75,7 @@ public class ChatListAdapter extends BaseAdapter {
     static class  ViewHolder{
         TextView senderName;
         TextView chatBody;
-        ViewGroup.LayoutParams layoutParams;
+        LinearLayout.LayoutParams layoutParams;
     }
 
 
@@ -113,6 +114,7 @@ public class ChatListAdapter extends BaseAdapter {
         //  Styling
         boolean isMe=message.getAuthor().equals(myUserName);
         //call a function for Styling
+        chatRowStling(isMe,holder);
         String author = message.getAuthor();
         holder.senderName.setText(author);
         String msg= message.getMessage();
@@ -120,10 +122,24 @@ public class ChatListAdapter extends BaseAdapter {
 
         return view;
     }
-    private void chatRowStling(boolean isItMe,ViewHolder holder1)
+    private void chatRowStling(boolean isItMe,ViewHolder holder)
     {
         if (isItMe) {
+            holder.layoutParams.gravity=Gravity.END;
+            holder.senderName.setTextColor(Color.BLUE);
+            holder.chatBody.setBackgroundResource(R.drawable.speech_bubble_green);
+        }
+        else
+        {
+            holder.layoutParams.gravity=Gravity.END;
+            holder.senderName.setTextColor(Color.GREEN);
+            holder.chatBody.setBackgroundResource(R.drawable.speech_bubble_orange);
 
         }
     }
+    //improve performance for memory stuff (Solve Scrolling issues)
+    public void freeUpResources(){
+        myDatabaseRef.removeEventListener(myListener);
+    }
+
 }
