@@ -4,7 +4,8 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/GITHUB/Android-Flutter-practice/Native_Android/SignInOptions/app/src/main/res/drawable/buttonshape.xml" value="0.22962962962962963" />
-        <entry key="..\:/GITHUB/Android-Flutter-practice/Native_Android/SignInOptions/app/src/main/res/layout/activity_main.xml" value="0.1793478260869565" />
+        <entry key="..\:/GITHUB/Android-Flutter-practice/Native_Android/SignInOptions/app/src/main/res/layout/activity_main.xml" value="0.2" />
+        <entry key="..\:/GITHUB/Android-Flutter-practice/Native_Android/SignInOptions/app/src/main/res/layout/activity_sign_out.xml" value="0.14375" />
       </map>
     </option>
   </component>
