@@ -174,6 +174,328 @@ class _MyHomePageState extends State<MyHomePage> {
                   ),
                   Divider(
                     color: Colors.black,
+                    indent: 50,
+                    endIndent: 50,
+                  ),
+                  Column(
+                    children: [
+                      Container(
+                          margin: EdgeInsets.only(top: 30, bottom: 10),
+                          child: Text(
+                            "Step 1",
+                            textDirection: TextDirection.ltr,
+                            style: TextStyle(
+                              decoration: TextDecoration.none,
+                              color: Colors.black,
+                              fontSize: 50,
+                              fontWeight: FontWeight.w900,
+                            ),
+                          )),
+                      Container(
+                          margin: EdgeInsets.only(top: 15, right: 40, left: 40),
+                          child: Center(
+                              child: Text(
+                            "Make your own creater points and loyality program.\n Your subscribers earn your currency overtime to claim your rewards.",
+                            textDirection: TextDirection.ltr,
+                            style: TextStyle(
+                              decoration: TextDecoration.none,
+                              fontWeight: FontWeight.w100,
+                              color: Colors.black,
+                              fontSize: 30,
+                            ),
+                            textAlign: TextAlign.center,
+                          )))
+                    ],
+                  ),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Container(
+                        margin: EdgeInsets.only(
+                            top: 40, left: 15, right: 30, bottom: 40),
+                        child: Image(
+                          image: AssetImage('images/png3.png'),
+                          height: 200,
+                        ),
+                      ),
+                      Container(
+                        margin: EdgeInsets.only(top: 40, left: 40, bottom: 40),
+                        child: Image(
+                          image: AssetImage('images/png4.png'),
+                          height: 500,
+                        ),
+                      )
+                    ],
+                  ),
+                  Divider(
+                    color: Colors.black,
+                    indent: 50,
+                    endIndent: 50,
+                  ),
+                  Column(
+                    children: [
+                      Container(
+                          margin: EdgeInsets.only(top: 30, bottom: 10),
+                          child: Text(
+                            "Step 2",
+                            textDirection: TextDirection.ltr,
+                            style: TextStyle(
+                              decoration: TextDecoration.none,
+                              color: Colors.black,
+                              fontSize: 50,
+                              fontWeight: FontWeight.w900,
+                            ),
+                          )),
+                      Container(
+                          margin: EdgeInsets.only(top: 15, right: 40, left: 40),
+                          child: Center(
+                              child: Text(
+                            "Subscribers who smash that bell are waiting for you to upload,with a timer, you can",
+                            textDirection: TextDirection.ltr,
+                            style: TextStyle(
+                              decoration: TextDecoration.none,
+                              fontWeight: FontWeight.w100,
+                              color: Colors.black,
+                              fontSize: 30,
+                            ),
+                            textAlign: TextAlign.center,
+                          )))
+                    ],
+                  ),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Container(
+                        margin: EdgeInsets.only(
+                            top: 40, left: 15, right: 30, bottom: 40),
+                        child: Image(
+                          image: AssetImage('images/png5.png'),
+                          height: 500,
+                        ),
+                      ),
+                    ],
+                  ),
+                  Divider(
+                    color: Colors.black,
+                    indent: 50,
+                    endIndent: 50,
+                  ),
+                  Column(
+                    children: [
+                      Container(
+                          margin: EdgeInsets.only(top: 30, bottom: 10),
+                          child: Text(
+                            "Step 3",
+                            textDirection: TextDirection.ltr,
+                            style: TextStyle(
+                              decoration: TextDecoration.none,
+                              color: Colors.black,
+                              fontSize: 50,
+                              fontWeight: FontWeight.w900,
+                            ),
+                          )),
+                      Container(
+                          margin: EdgeInsets.only(top: 15, right: 40, left: 40),
+                          child: Center(
+                              child: Text(
+                            "Viewers who watch your entire video Are your real supporters. with trivia you can finally",
+                            textDirection: TextDirection.ltr,
+                            style: TextStyle(
+                              decoration: TextDecoration.none,
+                              fontWeight: FontWeight.w100,
+                              color: Colors.black,
+                              fontSize: 30,
+                            ),
+                            textAlign: TextAlign.center,
+                          )))
+                    ],
+                  ),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Container(
+                        margin: EdgeInsets.only(
+                            top: 40, left: 15, right: 30, bottom: 40),
+                        child: Image(
+                          image: AssetImage('images/png6.png'),
+                          height: 500,
+                        ),
+                      ),
+                    ],
+                  ),
+                  Divider(
+                    color: Colors.black,
+                    indent: 50,
+                    endIndent: 50,
+                  ),
+                  Column(
+                    children: [
+                      Container(
+                          margin: EdgeInsets.only(top: 30, bottom: 10),
+                          child: Text(
+                            "Step 4",
+                            textDirection: TextDirection.ltr,
+                            style: TextStyle(
+                              decoration: TextDecoration.none,
+                              color: Colors.black,
+                              fontSize: 50,
+                              fontWeight: FontWeight.w900,
+                            ),
+                          )),
+                      Container(
+                          margin: EdgeInsets.only(top: 15, right: 40, left: 40),
+                          child: Center(
+                              child: Text(
+                            "Post the link in the description of your video and reward your loyal supporters.",
+                            textDirection: TextDirection.ltr,
+                            style: TextStyle(
+                              decoration: TextDecoration.none,
+                              fontWeight: FontWeight.w100,
+                              color: Colors.black,
+                              fontSize: 30,
+                            ),
+                            textAlign: TextAlign.center,
+                          )))
+                    ],
+                  ),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Container(
+                        margin: EdgeInsets.only(
+                            top: 40, left: 15, right: 30, bottom: 40),
+                        child: Image(
+                          image: AssetImage('images/png7.png'),
+                          height: 500,
+                        ),
+                      ),
+                      Container(
+                        margin: EdgeInsets.only(top: 40, left: 40, bottom: 40),
+                        child: Image(
+                          image: AssetImage('images/png8.png'),
+                          height: 500,
+                        ),
+                      )
+                    ],
+                  ),
+                  Divider(
+                    color: Colors.black,
+                    indent: 50,
+                    endIndent: 50,
+                  ),
+                  Column(
+                    children: [
+                      Container(
+                          margin: EdgeInsets.only(top: 15, right: 40, left: 40),
+                          child: Center(
+                              child: Text(
+                            "The Biggest brands in the world use loyalty programs - because they work",
+                            textDirection: TextDirection.ltr,
+                            style: TextStyle(
+                              decoration: TextDecoration.none,
+                              fontWeight: FontWeight.w900,
+                              color: Colors.black,
+                              fontSize: 30,
+                            ),
+                            textAlign: TextAlign.center,
+                          )))
+                    ],
+                  ),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Expanded(
+                          child: Container(
+                        margin: EdgeInsets.only(
+                            top: 40, left: 40, bottom: 40, right: 40),
+                        child: Image(
+                          image: AssetImage('images/brandlogos.png'),
+                          fit: BoxFit.fill,
+                          color: Colors.black54,
+                        ),
+                      ))
+                    ],
+                  ),
+                  Divider(
+                    color: Colors.black,
+                    indent: 50,
+                    endIndent: 50,
+                  ),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Expanded(
+                          child: Container(
+                        margin: EdgeInsets.only(
+                            top: 40, right: 100, left: 100, bottom: 40),
+                        child: Image(
+                          image: AssetImage('images/statsText.png'),
+                          fit: BoxFit.fill,
+                        ),
+                      ))
+                    ],
+                  ),
+                  Divider(
+                    color: Colors.black,
+                    indent: 50,
+                    endIndent: 50,
+                  ),
+                  Column(
+                    children: [
+                      Container(
+                          margin: EdgeInsets.only(top: 15, right: 40, left: 40),
+                          child: Center(
+                              child: Text(
+                            "YouTubers are brand too!",
+                            textDirection: TextDirection.ltr,
+                            style: TextStyle(
+                              decoration: TextDecoration.none,
+                              fontWeight: FontWeight.w900,
+                              color: Colors.black,
+                              fontSize: 60,
+                            ),
+                            textAlign: TextAlign.center,
+                          ))),
+                      Center(
+                        child: Row(
+                          children: [
+                            Column(
+                              children: [
+                                Container(
+                                  margin: EdgeInsets.only(
+                                      right: 590,
+                                      left: 600,
+                                      top: 10,
+                                      bottom: 50),
+                                  child: ElevatedButton(
+                                      child: Text("Get started with Google",
+                                          style: TextStyle(fontSize: 30)),
+                                      style: ButtonStyle(
+                                          alignment: Alignment.center,
+                                          padding: MaterialStateProperty.all<EdgeInsets>(
+                                              EdgeInsets.all(15)),
+                                          foregroundColor:
+                                              MaterialStateProperty.all<Color>(
+                                                  Colors.white),
+                                          backgroundColor:
+                                              MaterialStateProperty.all<Color>(
+                                                  Colors.blueAccent),
+                                          shape: MaterialStateProperty.all<RoundedRectangleBorder>(
+                                              RoundedRectangleBorder(
+                                                  borderRadius: BorderRadius.all(Radius.circular(20)),
+                                                  side: BorderSide(color: Colors.red)))),
+                                      onPressed: () => null),
+                                ),
+                              ],
+                            ),
+                          ],
+                        ),
+                      ),
+                    ],
+                  ),
+
+                  SizedBox(
+                    height: 30,
                   )
                 ],
               ))
