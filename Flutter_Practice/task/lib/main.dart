@@ -65,7 +65,7 @@ class _MyHomePageState extends State<MyHomePage> {
                     trailing: Text(
                       "Login",
                       style: TextStyle(
-                          fontSize: 20,
+                          fontSize: 23,
                           decoration: TextDecoration.underline,
                           color: Colors.brown),
                     ),
@@ -76,15 +76,79 @@ class _MyHomePageState extends State<MyHomePage> {
                   Row(
                     children: [
                       Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Container(
-                              margin: EdgeInsets.all(40),
+                              width: 800,
+                              margin: EdgeInsets.only(
+                                  top: 40, left: 40, right: 10, bottom: 10),
                               child: Text(
-                                "Figure out who your real Suppoters are ",
+                                "Figure out who your real Supporters are ",
+                                textDirection: TextDirection.ltr,
                                 style: TextStyle(
+                                  decoration: TextDecoration.none,
+                                  color: Colors.brown,
                                   fontSize: 40,
-                                  fontFamily: 'BalsamiqSans',
-                                  fontWeight: FontWeight.w700,
+                                  fontWeight: FontWeight.bold,
+                                ),
+                              )),
+                          Container(
+                              width: 800,
+                              margin: EdgeInsets.only(left: 40),
+                              child: Text(
+                                "No Longer Reward Random viewers and give your Community another reason to come back ",
+                                textDirection: TextDirection.ltr,
+                                style: TextStyle(
+                                  decoration: TextDecoration.none,
+                                  fontSize: 30,
+                                  fontFamily: 'Ubuntu',
+                                  fontWeight: FontWeight.w100,
+                                ),
+                              )),
+                          Container(
+                            margin: EdgeInsets.only(left: 40, top: 10),
+                            child: ElevatedButton(
+                                child: Text("Get started with Google",
+                                    style: TextStyle(fontSize: 30)),
+                                style: ButtonStyle(
+                                    padding:
+                                        MaterialStateProperty.all<EdgeInsets>(
+                                            EdgeInsets.all(15)),
+                                    foregroundColor:
+                                        MaterialStateProperty.all<Color>(
+                                            Colors.white),
+                                    backgroundColor:
+                                        MaterialStateProperty.all<Color>(
+                                            Colors.blueAccent),
+                                    shape: MaterialStateProperty.all<RoundedRectangleBorder>(
+                                        RoundedRectangleBorder(
+                                            borderRadius:
+                                                BorderRadius.all(Radius.circular(20)),
+                                            side: BorderSide(color: Colors.red)))),
+                                onPressed: () => null),
+                          ),
+                          Container(
+                              margin:
+                                  EdgeInsets.only(top: 15, left: 40, right: 10),
+                              child: Text(
+                                "We would love to speak to you :)",
+                                textDirection: TextDirection.ltr,
+                                style: TextStyle(
+                                  decoration: TextDecoration.none,
+                                  color: Colors.black,
+                                  fontSize: 15,
+                                ),
+                              )),
+                          Container(
+                              margin: EdgeInsets.only(
+                                  left: 40, right: 10, bottom: 10),
+                              child: Text(
+                                "Call or WhatsApp Vikram at +1 (203) 502-9558\nWhatsApp Rohan at:+91 99714 30120",
+                                textDirection: TextDirection.ltr,
+                                style: TextStyle(
+                                  decoration: TextDecoration.underline,
+                                  color: Colors.blue,
+                                  fontSize: 15,
                                 ),
                               ))
                         ],
@@ -93,14 +157,14 @@ class _MyHomePageState extends State<MyHomePage> {
                         margin: EdgeInsets.only(top: 20),
                         child: Image(
                           image: AssetImage('images/png1.png'),
-                          height: 600,
+                          height: 580,
                         ),
                       ),
                       Container(
-                        margin: EdgeInsets.only(top: 20),
+                        margin: EdgeInsets.only(top: 20, left: 20),
                         child: Image(
                           image: AssetImage('images/png2.png'),
-                          height: 600,
+                          height: 580,
                         ),
                       )
                     ],
