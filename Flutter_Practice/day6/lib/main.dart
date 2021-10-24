@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:day6/app_screens/home.dart';
+import 'package:day6/app_screens/home2.dart';
 
 void main() {
   runApp(myHome());
@@ -10,10 +12,10 @@ class myHome extends StatelessWidget {
     return MaterialApp(
       title: "AppTitle",
       home: Scaffold(
-        appBar: AppBar(
-          title: Text("My AppBar"),
-        ),
-      ),
+          appBar: AppBar(
+            title: Text("My AppBar"),
+          ),
+          body: My()),
     );
   }
 }
