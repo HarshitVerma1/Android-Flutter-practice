@@ -15,7 +15,7 @@ class myHome extends StatelessWidget {
           appBar: AppBar(
             title: Text("My AppBar"),
           ),
-          body: My()),
+          body: Myhome2()),
     );
   }
 }
