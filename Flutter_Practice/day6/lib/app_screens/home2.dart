@@ -60,8 +60,7 @@ class _Myhome2State extends State<Myhome2> {
                 ),
                 controller: emailController,
                 validator: (value) {
-                  if (value.toString().trim() == null ||
-                      value.toString().trim().length == 0) {
+                  if (value.toString().trim() == null) {
                     return "Plz Enter Value";
                   }
 
