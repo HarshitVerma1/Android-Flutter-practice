@@ -63,9 +63,8 @@ class _Myhome2State extends State<Myhome2> {
                   if (value.toString().trim() == null ||
                       value.toString().trim().length == 0) {
                     return "Plz Enter Value";
-                  } else if (value!.contains('@')) {
-                    return "Invalid Email!!";
                   }
+
                   return null;
                 },
               ),
